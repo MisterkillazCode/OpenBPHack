@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "bphack",
+  "version": "1.0",
+  "name": "BPHack",
+  "description": "BPHack",
+  "authors": [
+    "codigohasta"
+  ],
+  "contact": {
+    "sources": "https://github.com/adaxiaohu/BPHack"
+  },
+  "icon": "assets/template/icon.png",
+  "environment": "client",
+  "accessWidener": "bphack.accesswidener",
+  "entrypoints": {
+    "meteor": [
+      "com.codigohasta.addon.AddonTemplate"
+    ]
+  },
+  "mixins": [
+  "bphack.mixins.json"
+  ],
+  "custom": {
+    "meteor-client:color": "225,25,25",
+    "modmenu": {
+      "parent": {
+        "id": "meteor-client"
+      }
+    }
+  },
+  "depends": {
+    "java": ">=21",
+    "minecraft": ["1.21.11"],
+    "meteor-client": "*"
+  }
+}
